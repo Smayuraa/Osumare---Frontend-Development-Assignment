@@ -1,0 +1,38 @@
+.hero-section {
+  background-color: #f8f8fc; 
+  min-height: 45vh;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0e0c4c;
+}
+
+.hero-subtext {
+  margin-top: 2px;
+  font-size: 1.1rem;
+  color: #7a7a90;
+  max-width: 700px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: #ff3d57;
+  border-color: #ff3d57;
+}
+
+.btn-outline-danger {
+  color: #ff3d57;
+  border-color: #ff3d57;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff3d57;
+  color: white;
+}

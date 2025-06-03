@@ -1,0 +1,69 @@
+/* Footer.css */
+
+.footer {
+    margin-top: 50px;
+}
+.footer p{
+    font-size:14px;
+    font-weight: 500;
+}
+.text-muted{
+    font-size:10px;
+    font-weight: 600;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.footer ul.social-icons li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.footer ul.social-icons li svg {
+  color: #f44336; /* red accent */
+  font-size: 1rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-bottom {
+  font-size: 0.75rem; /* Smaller text */
+}
+
+.footer .footer-bottom ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.footer .footer-bottom ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

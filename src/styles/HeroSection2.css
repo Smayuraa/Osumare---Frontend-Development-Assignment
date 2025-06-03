@@ -1,0 +1,33 @@
+/* HeroSection.css */
+
+.hero-section2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-section2 h2 {
+  font-size: 3.3rem;
+  font-weight: 650;
+  margin-left: 10%;
+}
+
+.hero-section2 p {
+  font-size: 1.3rem;
+  color: black; /* Bootstrap's text-muted */
+    margin-left: 10%;
+
+}
+
+.hero-section2 img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.hero-section2 .btn {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+    margin-left: 8%;
+
+}

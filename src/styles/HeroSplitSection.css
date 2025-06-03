@@ -1,0 +1,95 @@
+.hero-split-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f7f7fc;
+  padding: 40px 20px;
+  min-height: 90vh;
+  gap: 20px;
+}
+
+.hero-left {
+  background-color: #ff445c;
+  color: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.hero-buttons .btn {
+  margin-right: 15px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.hero-right {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.hero-card-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.play-button {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 24px;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+/* Set a custom height for the navbar */
+.navbar {
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Style and scale the logo */
+.navbar-brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+/* Optional: Adjust vertical alignment */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Style links */
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+/* Style buttons */
+.btn-danger {
+  background-color: #ff3d57;
+  border-color: #ff3d57;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.btn-outline-danger {
+  color: #ff3d57;
+  border-color: #ff3d57;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff3d57;
+  color: #fff;
+}
