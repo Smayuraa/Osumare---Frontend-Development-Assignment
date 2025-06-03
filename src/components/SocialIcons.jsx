@@ -8,7 +8,7 @@ const SocialIcons = () => {
   const textStyle = { color: '#6c638c', fontWeight: 500 };
 
   return (
-    <div className="container py-4">
+    <div className="container py-4 " style={{ backgroundColor: "#f8f8fc" }}>
       <div className="row justify-content-center text-center align-items-center">
         <div className="col-2">
           <span style={iconStyle}>G</span>

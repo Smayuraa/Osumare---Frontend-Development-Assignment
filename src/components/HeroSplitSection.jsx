@@ -4,7 +4,7 @@ import homeImg from "../assets/homeImg.png";
 
 const HeroSplitSection = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5 heroSplitSection">
       <div className="row align-items-center">
         {/* Left Side */}
         <div className="col-md-6 mb-4 mb-md-0">

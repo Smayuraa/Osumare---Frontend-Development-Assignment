@@ -1,9 +1,12 @@
+.heroSplitSection{
+  background-color: #f8f8fc;
+  width: 100%;
+}
 .hero-split-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: #f7f7fc;
-  padding: 40px 20px;
   min-height: 90vh;
   gap: 20px;
 }

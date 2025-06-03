@@ -1,33 +1,38 @@
-/* Set a custom height for the navbar */
+/* Navbar container */
 .navbar {
-  height: 80px;
+  height: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* Style and scale the logo */
-.navbar-brand img {
-  width: 55px;
-  height: 55px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  object-fit: contain;
+/* Logo styling */
+.navbar-logo {
+  width: 150px;
+  display: block;
+  padding: 0;
+    background: transparent;
+  border-radius: 0;
+  margin-left: 50px;
+  box-shadow: none;
 }
 
-/* Optional: Adjust vertical alignment */
+/* Brand container */
 .navbar-brand {
+  padding: 0;
+  margin: 0;
+  background: transparent;
   display: flex;
   align-items: center;
 }
 
-/* Style links */
+/* Navigation links */
 .nav-link {
   font-size: 16px;
   font-weight: 500;
   margin: 0 10px;
 }
 
-/* Style buttons */
+/* Buttons */
 .btn-danger {
   background-color: #ff3d57;
   border-color: #ff3d57;
@@ -47,4 +52,13 @@
 .btn-outline-danger:hover {
   background-color: #ff3d57;
   color: #fff;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 991px) {
+  .ms-3.d-flex {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
