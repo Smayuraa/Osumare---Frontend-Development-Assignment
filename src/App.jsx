@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import TodoApp from './components/TodoApp';
 import UserList from './components/UserList';
 import Footer from './components/Footer';
-// Other sections
 import HeroSection from './components/HeroSection';
 import HeroSplitSection from './components/HeroSplitSection';
 import SocialIcons from './components/SocialIcons';
@@ -14,20 +13,45 @@ import HeroSection2 from './components/HeroSection2';
 function App() {
   const [userList, setUserList] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [showThankYou, setShowThankYou] = useState(false);
+
+  const handleFormSubmit = () => {
+    setShowModal(false);
+    setShowThankYou(true);
+    setTimeout(() => setShowThankYou(false), 2500); // hide after 2.5 sec
+  };
 
   return (
     <>
       <Navbar onSignUpClick={() => setShowModal(true)} />
-{showModal && (
-  <div className="custom-modal-backdrop">
-    <div className="custom-modal-content">
-      <button
-        className="btn btn-danger close-btn"
-        onClick={() => setShowModal(false)}
-      >
-        ❌
+
+      {showModal && (
+        <div className="custom-modal-backdrop">
+          <div className="custom-modal-content">
+            <button
+              className="btn btn-danger close-btn"
+              onClick={() => setShowModal(false)}
+            >
+              ❌
+            </button>
+            <TodoApp
+              userList={userList}
+              setUserList={setUserList}
+              onSubmitSuccess={handleFormSubmit}
+            />
+          </div>
+        </div>
+      )}
+
+     {showThankYou && (
+  <div className="thank-you-overlay">
+    <div className="thank-you-popup">
+      <div className="emoji">❤️</div>
+      <h2>Thank you for connect with us.</h2>
+      <p>Our team will contacting with you soon</p>
+      <button className="done-button" onClick={() => setShowThankYou(false)}>
+        Done
       </button>
-      <TodoApp userList={userList} setUserList={setUserList} />
     </div>
   </div>
 )}

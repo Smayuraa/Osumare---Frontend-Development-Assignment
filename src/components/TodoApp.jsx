@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import '../App.css'; // make sure your CSS is imported
 import './UserList'
 
-function TodoApp({ setUserList, userList }) {
+function TodoApp({ setUserList, userList , onSubmitSuccess }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -61,6 +61,9 @@ function TodoApp({ setUserList, userList }) {
       languages: [],
       termsAccepted: false,
     });
+
+        if (onSubmitSuccess) onSubmitSuccess();
+
   }
 
   return (
