@@ -5,10 +5,10 @@ import homeImg from "../assets/homeImg.png";
 const HeroSplitSection = () => {
   return (
     <div className="container py-5 heroSplitSection">
-      <div className="row align-items-center">
+      <div className="row align-items-stretch no-gutter">
         {/* Left Side */}
-        <div className="col-md-6 mb-4 mb-md-0">
-          <div className="hero-left">
+        <div className="col-md-6 d-flex herobox">
+          <div className="hero-left w-100">
             <h1 className="hero-heading">
               Organize.<br />Achieve.<br />Relax.
             </h1>
@@ -24,7 +24,7 @@ const HeroSplitSection = () => {
         </div>
 
         {/* Right Side */}
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex justify-content-center">
           <div className="hero-card position-relative rounded-4 overflow-hidden shadow">
             {/* Overlay */}
             <div className="hero-overlay position-absolute top-0 start-0 p-3 text-white z-2">
@@ -48,7 +48,10 @@ const HeroSplitSection = () => {
                   <small>Chief Productivity Enthusiast</small>
                 </div>
               </div>
-              <div className="play-button bg-white text-dark rounded-circle d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px" }}>
+              <div
+                className="play-button bg-white text-dark rounded-circle d-flex align-items-center justify-content-center"
+                style={{ width: "40px", height: "40px" }}
+              >
                 ▶
               </div>
             </div>

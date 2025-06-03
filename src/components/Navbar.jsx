@@ -1,12 +1,15 @@
-import React from 'react';
-import '../styles/Navbar.css';
 import logoImg from '../assets/logo.png';
 
-const Navbar = () => {
+const Navbar = ({ onSignUpClick }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4" style={{ height: '90px' }}>
       <a href="/" className="navbar-brand d-flex align-items-center">
-        <img src={logoImg} alt="Company Logo" className="navbar-logo me-2" />
+        <img
+          src={logoImg}
+          alt="Company Logo"
+          className="me-2"
+          style={{ width: '140px', height: '40px', objectFit: 'cover', marginLeft: "90px" }}
+        />
       </a>
 
       <button
@@ -21,24 +24,16 @@ const Navbar = () => {
         <span className="navbar-toggler-icon" />
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul className="navbar-nav mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link text-dark" href="#about-us">About Us</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark" href="#features">Features</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark" href="#more-option">More Option</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-dark" href="#contact">Contact</a>
-          </li>
+      <div className="collapse navbar-collapse justify-content-end" id="navbarNav" style={{ marginRight: '80px' }}>
+        <ul className="navbar-nav align-items-center mb-2 mb-lg-0">
+          <li className="nav-item"><a className="nav-link text-dark" href="#about-us">About Us</a></li>
+          <li className="nav-item"><a className="nav-link text-dark" href="#features">Features</a></li>
+          <li className="nav-item"><a className="nav-link text-dark" href="#more-option">More Option</a></li>
+          <li className="nav-item"><a className="nav-link text-dark" href="#contact">Contact</a></li>
         </ul>
-        <div className="ms-3 d-flex gap-2">
+        <div className="ms-lg-3 d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
           <button className="btn btn-outline-danger">Log In</button>
-          <button className="btn btn-danger">Sign Up</button>
+          <button className="btn btn-danger" onClick={onSignUpClick}>Sign Up</button>
         </div>
       </div>
     </nav>
