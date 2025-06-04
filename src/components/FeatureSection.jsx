@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/FeatureSection.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { BsPhone, BsSend, BsPeople, BsListCheck } from 'react-icons/bs';

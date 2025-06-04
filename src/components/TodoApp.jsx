@@ -66,7 +66,6 @@ function TodoApp({ setUserList, userList, onSubmitSuccess, setShowModal }) {
 
   return (
     <div className="modal-form">
-      {/* Close Button */}
       <button
         className="btn btn-danger close-btn"
         onClick={() => setShowModal(false)}

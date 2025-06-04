@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/TodoApp"; 
 import '../styles/UserList.css'
 

@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.2); /* light transparent white */
+  background-color: rgba(255, 255, 255, 0.2); 
   backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
 
 .custom-modal-content {
   background-color: #ffffff;
-  padding: 50px 40px 30px 40px; /* Increased top padding */
+  padding: 50px 40px 30px 40px; 
   border-radius: 16px;
   width: 90%;
   max-width: 500px;

@@ -1,6 +1,6 @@
 import React from "react";
 import uncoverImg from "../assets/uncoverImg.jpg";
-import "../styles/HeroSection2.css"; // 👈 Add this line
+import "../styles/HeroSection2.css";
 
 function HeroSection() {
   return (

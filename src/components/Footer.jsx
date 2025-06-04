@@ -1,7 +1,6 @@
-import React from 'react';
-import '../styles/Footer.css'; // Import custom styles
+import '../styles/Footer.css';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa6';
-import logo from '../assets/logo.png'; // example
+import logo from '../assets/logo.png'; 
 
 
 function Footer() {
@@ -23,7 +22,6 @@ function Footer() {
             <small className="text-muted">By subscribing, you consent to our Privacy Policy and agree to receive updates.</small>
           </div>
 
-          {/* Useful Links */}
           <div className="col-md-2">
             <h6 className="fw-bold mb-3">Useful Links</h6>
             <ul className="list-unstyled">
@@ -35,7 +33,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+        
           <div className="col-md-3">
             <h6 className="fw-bold mb-3">Resources</h6>
             <ul className="list-unstyled">
@@ -47,7 +45,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Connect With Us */}
+   
           <div className="col-md-3">
             <h6 className="fw-bold mb-3">Connect With Us</h6>
             <ul className="list-unstyled social-icons">

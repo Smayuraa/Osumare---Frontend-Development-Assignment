@@ -1,5 +1,3 @@
-/* Footer.css */
-
 .footer {
     margin-top: 50px;
 }
@@ -34,7 +32,7 @@
 }
 
 .footer ul.social-icons li svg {
-  color: #f44336; /* red accent */
+  color: #f44336; 
   font-size: 1rem;
 }
 
@@ -47,7 +45,7 @@
   text-decoration: underline;
 }
 .footer .footer-bottom {
-  font-size: 0.75rem; /* Smaller text */
+  font-size: 0.75rem; 
 }
 
 .footer .footer-bottom ul li {

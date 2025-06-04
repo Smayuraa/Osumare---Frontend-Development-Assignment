@@ -8,14 +8,12 @@
   transition: all 0.3s ease;
 }
 
-/* Table Styles */
 .user-table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Table Head */
 .user-table thead {
   background-color: #f1f3f5;
   border-bottom: 1px solid #ddd;
@@ -31,7 +29,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Table Body */
 .user-table tbody td {
   padding: 16px 20px;
   font-size: 14px;
@@ -48,17 +45,15 @@
   background-color: #f0f8ff;
 }
 
-/* Last Row Border Fix */
 .user-table tr:last-child td {
   border-bottom: none;
 }
 
-/* Checkbox Styling */
 .user-table input[type="checkbox"] {
   width: 18px;
   height: 18px;
   cursor: pointer;
-  accent-color: #4a90e2; /* works in modern browsers */
+  accent-color: #4a90e2; 
 }
 
 /* Responsive Adjustment */

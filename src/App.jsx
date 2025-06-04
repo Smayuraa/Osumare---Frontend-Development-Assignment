@@ -18,7 +18,7 @@ function App() {
   const handleFormSubmit = () => {
     setShowModal(false);
     setShowThankYou(true);
-    setTimeout(() => setShowThankYou(false), 2500); // hide after 2.5 sec
+    setTimeout(() => setShowThankYou(false), 2500); 
   };
 
   return (

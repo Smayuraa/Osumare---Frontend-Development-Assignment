@@ -1,4 +1,3 @@
-import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../styles/TestimonialSection.css";
 import testImg from "../assets/testImg.jpg";
@@ -12,7 +11,6 @@ const TestimonialSection = () => {
       </p>
 
       <div className="testimonial-wrapper">
-        {/* Left Box */}
         <div className="testimonial-box">
           <div className="testimonial-border">
             <p className="quote">

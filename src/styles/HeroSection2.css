@@ -1,5 +1,3 @@
-/* HeroSection.css */
-
 .hero-section2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -13,7 +11,7 @@
 
 .hero-section2 p {
   font-size: 1.3rem;
-  color: black; /* Bootstrap's text-muted */
+  color: black; 
     margin-left: 10%;
 
 }
