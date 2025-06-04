@@ -1,8 +1,41 @@
-# React + Vite
+# 🚀 Responsive Internal Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Front-End Development Assignment** for **Osumare Marketing Solutions**. The task was to create a **responsive, pixel-perfect internal landing page** based on a Figma design shared by the team.
 
-Currently, two official plugins are available:
+## 🔍 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A responsive landing page built using **React.js**, following industry best practices in accessibility, performance optimization, and cross-browser compatibility.
+
+---
+
+## 📋 Assignment Requirements
+
+- ✅ **Responsive Design**: Fully adaptable layout for mobile, tablet, and desktop.
+- ✅ **Pixel-Perfect UI**: Accurate implementation based on Figma.
+- ✅ **Optimized Assets**: All images and media are optimized for performance.
+- ✅ **Cross-Browser Compatibility**: Tested on Chrome, Firefox, Safari, and Edge.
+- ✅ **React Best Practices**: Clean, maintainable, and modular code.
+- ✅ **Performance**: Lazy loading and efficient rendering.
+- ✅ **Accessibility**: Follows WCAG accessibility guidelines.
+- ❌ **No AI Copied Code**: All code is original and handwritten.
+
+---
+
+## 🔗 Live Preview
+
+👉 [Live Demo](https://frontend-internship-assignment-osumar.netlify.app/)
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- HTML5
+- CSS3 (and Bootstrap)
+- JavaScript (ES6+)
+- Figma (Design Reference)
+
+---
+
+
+
