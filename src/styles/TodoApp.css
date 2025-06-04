@@ -1,0 +1,189 @@
+/* Center the modal form */
+.modal-form {
+  position: relative;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  max-width: 540px;
+  width: 100%;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title & description */
+.modal-form h2 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.modal-form p {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.modal-form .form-control {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Radio and checkbox labels */
+.modal-form .form-check-label {
+  margin-left: 0.5rem;
+  font-size: 14px;
+}
+
+/* Form check inline styling */
+.form-checks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Button */
+.modal-form button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.modal-form button[type="submit"]:hover {
+  background-color: #357bd8;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2); /* light transparent white */
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.custom-modal-content {
+  background-color: #ffffff;
+  padding: 50px 40px 30px 40px; /* Increased top padding */
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.thank-you-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.thank-you-popup {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.thank-you-popup h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.thank-you-popup p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.done-button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.done-button:hover {
+  background-color: #ff3355;
+}

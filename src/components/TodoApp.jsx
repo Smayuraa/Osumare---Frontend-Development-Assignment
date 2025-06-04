@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import '../App.css'; // make sure your CSS is imported
-import './UserList'
+import "../styles/TodoApp.css";
+// import '../App.css'
 
-function TodoApp({ setUserList, userList , onSubmitSuccess }) {
+function TodoApp({ setUserList, userList, onSubmitSuccess, setShowModal }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -11,7 +11,6 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
     languages: [],
     termsAccepted: false,
   });
-
 
   useEffect(() => {
     const savedUsers = localStorage.getItem("userList");
@@ -62,14 +61,22 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
       termsAccepted: false,
     });
 
-        if (onSubmitSuccess) onSubmitSuccess();
-
+    if (onSubmitSuccess) onSubmitSuccess();
   }
 
   return (
     <div className="modal-form">
+      {/* Close Button */}
+      <button
+        className="btn btn-danger close-btn"
+        onClick={() => setShowModal(false)}
+      >
+        ❌
+      </button>
+
       <h2>Get Started Today!</h2>
       <p>Fill in your details and take control of your tasks.</p>
+
       <form onSubmit={handleSubmit}>
         <div className="mb-3 d-flex gap-2">
           <input
@@ -92,7 +99,7 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
 
         <div className="mb-3">
           <label className="form-label">Gender</label><br />
-          <div className="form-check form-check-inline">
+          <div className="form-checks form-check-inline">
             <input
               className="form-check-input"
               type="radio"
@@ -103,7 +110,7 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
             />
             <label className="form-check-label">Male</label>
           </div>
-          <div className="form-check form-check-inline">
+          <div className="form-checks form-check-inline">
             <input
               className="form-check-input"
               type="radio"
@@ -118,7 +125,7 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
 
         <div className="mb-3">
           <label className="form-label">Language</label>
-          <div className="form-check">
+          <div className="form-checks">
             <input
               type="checkbox"
               name="languages"
@@ -179,9 +186,6 @@ function TodoApp({ setUserList, userList , onSubmitSuccess }) {
 
         <button type="submit" className="btn btn-primary w-100">Done</button>
       </form>
-
-      <hr />
-      
     </div>
   );
 }

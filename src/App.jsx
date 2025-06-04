@@ -28,16 +28,12 @@ function App() {
       {showModal && (
         <div className="custom-modal-backdrop">
           <div className="custom-modal-content">
-            <button
-              className="btn btn-danger close-btn"
-              onClick={() => setShowModal(false)}
-            >
-              ❌
-            </button>
+           
             <TodoApp
               userList={userList}
               setUserList={setUserList}
               onSubmitSuccess={handleFormSubmit}
+              setShowModal={setShowModal}
             />
           </div>
         </div>
