@@ -86,6 +86,7 @@ function TodoApp({ setUserList, userList, onSubmitSuccess, setShowModal }) {
             placeholder="Enter your first name"
             value={formData.firstName}
             onChange={handleInputChange}
+            style={{backgroundColor:"ffeef0"}}
           />
           <input
             type="text"

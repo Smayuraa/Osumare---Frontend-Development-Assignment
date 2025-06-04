@@ -1,5 +1,6 @@
 import React from "react";
-import "../components/TodoApp"; // styling import (optional)
+import "../components/TodoApp"; 
+import '../styles/UserList.css'
 
 function UserList({ users }) {
    console.log("Received users in UserList:", users)
